@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
+import Cards from '../components/UI/Cards';
 
 function Home() {
   return (
@@ -43,6 +44,13 @@ function Home() {
                         </Swiper>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div className="container">
+            <div className="row">
+                <Cards />
             </div>
         </div>
     </section>

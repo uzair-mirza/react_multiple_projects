@@ -4,6 +4,8 @@ import AppLayout from './components/Layout/AppLayout'
 import Home from './pages/Home'
 import ErrorPage from './pages/ErrorPage'
 import Location from './pages/Location'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 const router = createBrowserRouter([
   {
@@ -14,9 +16,18 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
-      },{
+      },
+      {
         path: 'location',
         element: <Location />
+      },
+      {
+        path: 'about',
+        element: <About />
+      },
+      {
+        path: 'contact',
+        element: <Contact />
       }
     ]
   }

@@ -8,7 +8,7 @@ function Header() {
     <nav className="navbar bg-dark">
       <div className="navbar-logo">
         <img
-          src="/images/brand_logo.png"
+          src="/images/new-show.png"
           alt="Nike Logo"
         />
       </div>
