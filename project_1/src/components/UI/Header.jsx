@@ -1,17 +1,25 @@
-import React from 'react'
+import React, { useState } from "react";
 import { NavLink } from 'react-router-dom'
 
 function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className="navbar">
+    <nav className="navbar bg-dark">
       <div className="navbar-logo">
         <img
           src="/images/brand_logo.png"
           alt="Nike Logo"
         />
       </div>
-      <ul className="navbar-links">
-        <li><NavLink to='home'>Menu</NavLink></li>
+      <button
+        className="hamburger-menu"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </button>
+      <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
+        <li><NavLink to='/'>Menu</NavLink></li>
         <li><NavLink to='location'>Location</NavLink></li>
         <li><NavLink to='about'>About</NavLink></li>
         <li><NavLink to='contact'>Contact</NavLink></li>

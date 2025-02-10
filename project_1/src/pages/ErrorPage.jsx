@@ -9,7 +9,8 @@ function ErrorPage() {
 
   return (
     <div>
-      Here
+       {error.status}<br />
+       {error.data}
     </div>
   )
 }
